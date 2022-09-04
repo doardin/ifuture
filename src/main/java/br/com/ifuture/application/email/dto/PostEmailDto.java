@@ -28,6 +28,7 @@ public class PostEmailDto {
     @NotBlank(message = ValidationMessages.REQUIRED)
     private String text;
     
+    @NotNull(message = ValidationMessages.REQUIRED)
     @Future(message = ValidationMessages.VALID_DATE)
     private LocalDate sendAt;
 }
