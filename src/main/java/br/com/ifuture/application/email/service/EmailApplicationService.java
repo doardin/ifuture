@@ -20,6 +20,7 @@ public class EmailApplicationService {
             .id(UUID.randomUUID().toString())
             .recipientName(dto.getName())
             .recipientEmail(dto.getEmail())
+            .subject(dto.getSubject())
             .text(dto.getText())
         .build();
         
