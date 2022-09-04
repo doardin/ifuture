@@ -23,6 +23,10 @@ public class PostEmailDto {
     @NotBlank(message = ValidationMessages.REQUIRED)
     @Email(message = ValidationMessages.VALID_EMAIL)
     private String email;
+
+    @NotNull(message = ValidationMessages.REQUIRED)
+    @NotBlank(message = ValidationMessages.REQUIRED)
+    private String subject;
     
     @NotNull(message = ValidationMessages.REQUIRED)
     @NotBlank(message = ValidationMessages.REQUIRED)
