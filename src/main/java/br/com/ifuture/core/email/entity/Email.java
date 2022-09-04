@@ -31,6 +31,9 @@ public class Email {
     @Column
     private String recipientEmail;
     
+    @Column
+    private String subject;
+
     @Lob
     @Column
     private String text;
